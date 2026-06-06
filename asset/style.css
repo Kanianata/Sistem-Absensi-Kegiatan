@@ -1,0 +1,124 @@
+/* ============================================================
+   assets/style.css — Custom styles for Sistem Absensi Kegiatan
+   ============================================================ */
+
+/* ----- Layout ----- */
+html, body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: #f0f4f8;
+    font-family: 'Segoe UI', system-ui, sans-serif;
+}
+
+.container-fluid.py-4 {
+    flex: 1;
+}
+
+/* ----- Navbar brand ----- */
+.navbar-brand {
+    letter-spacing: 0.5px;
+    font-size: 1.2rem;
+}
+
+/* ----- Cards ----- */
+.card {
+    border: none;
+    border-radius: 12px;
+    box-shadow: 0 2px 12px rgba(0,0,0,.08);
+}
+
+.card-header {
+    border-radius: 12px 12px 0 0 !important;
+    font-weight: 600;
+}
+
+/* ----- Stat cards (dashboard) ----- */
+.stat-card {
+    border-radius: 14px;
+    transition: transform .2s, box-shadow .2s;
+}
+
+.stat-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 24px rgba(0,0,0,.12);
+}
+
+.stat-icon {
+    font-size: 2.5rem;
+    opacity: .85;
+}
+
+/* ----- Tables ----- */
+.table thead th {
+    background-color: #0d6efd;
+    color: #fff;
+    border: none;
+    font-weight: 600;
+    white-space: nowrap;
+}
+
+.table-hover tbody tr:hover {
+    background-color: #e8f0fe;
+}
+
+/* ----- Badges ----- */
+.badge-hadir  { background-color: #198754 !important; }
+.badge-izin   { background-color: #fd7e14 !important; }
+.badge-sakit  { background-color: #dc3545 !important; }
+
+/* ----- Forms ----- */
+.form-control:focus, .form-select:focus {
+    border-color: #0d6efd;
+    box-shadow: 0 0 0 .2rem rgba(13,110,253,.2);
+}
+
+/* ----- Login page ----- */
+.login-wrapper {
+    min-height: 100vh;
+    background: linear-gradient(135deg, #0d6efd 0%, #0a58ca 60%, #084298 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.login-card {
+    width: 100%;
+    max-width: 420px;
+    border-radius: 18px;
+    box-shadow: 0 16px 48px rgba(0,0,0,.25);
+}
+
+.login-logo {
+    font-size: 3rem;
+    color: #0d6efd;
+}
+
+/* ----- Responsive table wrapper ----- */
+.table-responsive {
+    border-radius: 0 0 12px 12px;
+}
+
+/* ----- Action buttons ----- */
+.btn-action {
+    padding: .25rem .55rem;
+    font-size: .8rem;
+}
+
+/* ----- Empty state ----- */
+.empty-state {
+    padding: 3rem;
+    text-align: center;
+    color: #6c757d;
+}
+
+.empty-state i {
+    font-size: 3.5rem;
+    opacity: .4;
+}
+.navbar .nav-link.active,
+.navbar .nav-link:active {
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 6px;
+    color: #fff !important;
+}
